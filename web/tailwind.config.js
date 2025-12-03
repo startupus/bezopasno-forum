@@ -25,6 +25,7 @@ export default {
         'gradient-loop': 'gradient-loop 18s ease-in-out infinite alternate',
         'cta-float': 'cta-float 4s ease-in-out infinite',
         'zoom': 'zoom 20s ease-in-out infinite alternate',
+        'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
       },
       keyframes: {
         'gradient-loop': {
@@ -39,6 +40,10 @@ export default {
         'zoom': {
           '0%': { transform: 'scale(1)' },
           '100%': { transform: 'scale(1.1)' },
+        },
+        'pulse-slow': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.7' },
         },
       },
     },

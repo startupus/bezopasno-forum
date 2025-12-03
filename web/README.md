@@ -12,7 +12,27 @@ npm run dev        # локальный dev-server
 npm run build      # прод сборка
 npm run preview    # предпросмотр сборки
 npm test           # Vitest (jsdom + coverage)
+./deploy.sh        # деплой на продакшн сервер
 ```
+
+## Деплой
+
+Для деплоя на продакшн сервер используется скрипт `deploy.sh`, который:
+1. Проверяет наличие собранной папки `dist/`
+2. Загружает файлы на сервер через SSH/rsync
+3. Синхронизирует содержимое с удаленным сервером
+
+**Требования:**
+- Установленный `sshpass` (для macOS: `brew install hudochenkov/sshpass/sshpass`)
+- Собранный проект (`npm run build`)
+
+**Конфигурация сервера:**
+- Хост: `j176759b.beget.tech`
+- Пользователь: `j176759b_forum`
+- Путь: `~/public_html`
+- Домен: `https://forum.bezopasno.org/`
+
+Скрипт автоматически добавляет хост в `known_hosts` и использует безопасные опции SSH.
 
 ## Стек и ссылки
 - React 19 + Vite 7 + TypeScript.[^1]

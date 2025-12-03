@@ -29,17 +29,17 @@ export const heroContent = {
   title: 'Безопасность сделок с недвижимостью',
   description:
     'Живые кейсы по безопасности сделок, практические инструменты для юристов и риэлторов, поддержка личного ресурса и тёплый нетворкинг в профессиональном кругу.',
-  date: 'Январь 2026',
-  city: 'Москва',
+  date: '28 января 2026',
+  city: 'Москва (очно)',
   note: 'Точная дата и адрес — в боте.',
 }
 
 export const audienceSegments = [
-  { title: 'Юристы по недвижимости и адвокаты', detail: 'Кто принимает ключевые правовые решения по сделкам.' },
-  { title: 'Риэлторы, брокеры, руководители агентств', detail: 'Ведут клиента от идеи до подписания.' },
-  { title: 'Нотариусы', detail: 'Гарантируют юридическую чистоту и контроль рисков.' },
-  { title: 'Банки, застройщики, страховые', detail: 'Финансовые и инфраструктурные партнёры сделки.' },
-  { title: 'Команды комплаенса и репутации', detail: 'Отвечают за процедуры проверки и защиту бренда.' },
+  { title: 'Юристы по недвижимости и адвокаты' },
+  { title: 'Риэлторы, брокеры, руководители агентств' },
+  { title: 'Нотариусы' },
+  { title: 'Представители банков, застройщиков, страховых компаний' },
+  { title: 'Все, кто отвечает за безопасность сделок и репутацию' },
 ] as const
 
 export const audienceResult =
@@ -59,7 +59,7 @@ export const organizers = [
 export const programBlocks: ProgramBlock[] = [
   {
     id: 'safety',
-    title: '1. Как мы создаём безопасность сделок',
+    title: 'Как мы создаём безопасность сделок',
     summary: 'Вторичка, новостройки и сложные объекты рассматриваются одновременно глазами юриста, нотариуса и IT.',
     bullets: [
       'Живые кейсы вторички, новостроек и проблемных объектов',
@@ -121,7 +121,7 @@ export const programBlocks: ProgramBlock[] = [
   },
   {
     id: 'resources',
-    title: '2. Где берём силы для правильных решений',
+    title: 'Где берём силы для правильных решений',
     summary: 'Про ресурсность профессионала, который ежедневно принимает ответственные решения.',
     bullets: [
       'Как не «сгореть» в потоке сделок и конфликтов',
@@ -138,24 +138,10 @@ export const programBlocks: ProgramBlock[] = [
         block: 'Ресурс',
       },
       {
-        name: 'Юлия Плетнёва',
-        role: 'Организатор профессиональных сообществ',
-        topic: 'Самоорганизация юристов и риэлторов: среда, которая бережёт',
-        photo: '/images/spikers/yulia-pletneva.jpg',
-        block: 'Ресурс',
-      },
-      {
         name: 'Дмитрий Лукьян',
         role: 'Предприниматель, автоматизатор и геймификатор',
         topic: 'Экшен-игра: как продавать себя честно и экологично',
         photo: '/images/spikers/dmitry-lukyan.jpg',
-        block: 'Ресурс',
-      },
-      {
-        name: 'Оксана Чубарь',
-        role: 'Адвокат',
-        topic: 'Системный подход к сложным кейсам: не упустить критические детали',
-        photo: '/images/spikers/oksana-chubar.jpg',
         block: 'Ресурс',
       },
       {
@@ -176,7 +162,7 @@ export const programBlocks: ProgramBlock[] = [
   },
   {
     id: 'human',
-    title: '3. Чем украшаем свои будни',
+    title: 'Чем украшаем свои будни',
     summary: 'Блок про человеческую сторону профессии: танец, музыка, путешествия и творческие практики.',
     bullets: [
       'Творческие мини-выступления спикеров',
@@ -319,5 +305,45 @@ export const gallery = [
   '/images/events/00871_2 1.jpg',
   '/images/events/00925_2 1.jpg',
   '/images/events/01204_2 1.jpg',
+]
+
+// Фото для галереи прошедших мероприятий (гости, залы, люди в залах)
+// Убраны дубликаты
+export const pastEventsPhotos = [
+  '/images/past-events/00086_1 1.jpg',
+  '/images/past-events/00116_1 1.jpg',
+  '/images/past-events/00165_3 1.jpg',
+  '/images/past-events/00263_3 1.jpg',
+  '/images/past-events/00368_1 1.jpg',
+  '/images/past-events/00412_1 1.jpg',
+  '/images/past-events/00871_2 1.jpg',
+  '/images/past-events/00925_2 1.jpg',
+  '/images/past-events/01204_2 1.jpg',
+  '/images/past-events/Frame 2648.jpg',
+  '/images/past-events/Frame 2649.jpg',
+  '/images/past-events/Frame 2650.jpg',
+  '/images/past-events/Frame 2651.jpg',
+  '/images/past-events/Frame 2652.jpg',
+  '/images/past-events/Frame 2653.jpg',
+  '/images/past-events/Frame 2654.jpg',
+  '/images/past-events/Frame 2655.jpg',
+  '/images/past-events/Frame 2656.jpg',
+  '/images/past-events/Frame 2657.jpg',
+  '/images/past-events/Frame 2658.jpg',
+  '/images/past-events/Frame 2659.jpg',
+  '/images/past-events/Frame 2660.jpg',
+  '/images/past-events/Frame 2661.jpg',
+  '/images/past-events/Frame 2662.jpg',
+  '/images/past-events/Frame 2663.jpg',
+  '/images/past-events/Frame 2664.jpg',
+  '/images/past-events/Frame 2665.jpg',
+  '/images/past-events/Frame 2666.jpg',
+  '/images/past-events/Frame 2667.jpg',
+  '/images/past-events/Frame 2668.jpg',
+  '/images/past-events/Frame 2669.jpg',
+  '/images/past-events/Frame 2670.jpg',
+  '/images/past-events/Frame 2671.jpg',
+  '/images/past-events/Frame 2672.jpg',
+  '/images/past-events/Frame 2676.jpg',
 ]
 

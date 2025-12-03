@@ -17,18 +17,22 @@ export const HeroSection = () => {
       
       <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center gap-10 px-6 pb-20 pt-28 text-center md:px-10">
         <div className="flex flex-col items-center gap-6">
-          <img
-            src="/logos/bezopasno-f.svg"
-            alt="Логотип БЕЗОПАСНОСДЕЛКА для темного фона"
-            className="h-24 w-auto drop-shadow-lg md:h-32"
-          />
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em]">
-            {heroContent.badge}
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em]">
+              II заседание Форума юристов по недвижимости
+            </p>
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em]">
+              {heroContent.badge}
+            </p>
+          </div>
         </div>
 
         <div className="space-y-6 text-balance max-w-4xl">
-          <h1 className="font-display text-4xl leading-tight md:text-6xl">{heroContent.title}</h1>
+          <img
+            src="/logos/bezopasno-f.svg"
+            alt="Логотип БЕЗОПАСНОСДЕЛКА для темного фона"
+            className="h-32 w-auto drop-shadow-lg md:h-48 mx-auto"
+          />
           <p className="text-lg text-white/80 md:text-xl">{heroContent.description}</p>
         </div>
 
@@ -36,6 +40,9 @@ export const HeroSection = () => {
           <CTAButton href={BOT_URL} label="Получить бесплатный пропуск" />
           <CTAButton href="#program" label="Смотреть программу" variant="secondary" />
         </div>
+        <p className="text-sm text-white/60">
+          Количество мест ограничено. Участие бесплатное по предварительной регистрации.
+        </p>
 
         <div className="grid w-full max-w-4xl gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-2xl md:grid-cols-3">
           <div>

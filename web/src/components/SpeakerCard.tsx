@@ -137,7 +137,11 @@ export const SpeakerCard = ({ speaker }: SpeakerCardProps) => {
             </p>
           </div>
         </div>
-        <p className="text-sm text-white/80">{speaker.topic}</p>
+        <div className="relative rounded-xl border-l-4 border-brand.red/50 bg-brand.red/10 p-4 pl-5">
+          <p className="text-base font-semibold leading-relaxed text-white">
+            {speaker.topic}
+          </p>
+        </div>
       </article>
 
       {speaker.photo && (
